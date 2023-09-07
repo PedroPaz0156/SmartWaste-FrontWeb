@@ -17,7 +17,26 @@
         <center>
         <!--conteudo da tela-->
             <img src="img/logo.png"> <!--link para imagem da logo-->
-            <div>
+
+            <form id="login-form">
+                <div>
+                    <table>
+                        <tr>
+                            <th><label for="username">CPF:</label></th>
+                            <th><input type="text" id="username" name="username" required></th>
+                        </tr>
+                        <tr>
+                            <th><label for="password">SENHA:</label></th>
+                            <th><input type="password" id="password" name="password" required></th>
+                        </tr>
+                    </table>
+                    <button type="submit">Login</button>
+
+                    <p id="error"></p>
+                </div>
+            </form>
+
+            <!--<div>
                 <table>
                     <tr>
                         <th><a>CPF:</a></th> 
@@ -28,12 +47,12 @@
                     </tr>
                     <tr>
                         <th><a>Senha:</a></th>
-                        <th><input type="password" id="password" name="password"/></th>
+                        <th><input type="password" id="senha" name="senha"/></th>
                     </tr>
                 </table>
                 <p></p>
-                <button type="submit" id="login">Entrar</button>
-            </div>
+                <button type="submit" id="login" onclick="entrar()">Entrar</button>
+            </div>-->
         </center>
     </body>
 </html>

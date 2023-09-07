@@ -16,6 +16,7 @@ input{
     padding: 5px;
     width: fit-content;
 }
+label {font-weight: bold;}
 button{
     border: 0px;
     background-color: #4da660;
@@ -30,4 +31,8 @@ button{
 button:hover{
     border: 1px;
     background-color: #5db670;
+}
+.erro{
+    color:red;
+    font-weight: lighter;
 }
