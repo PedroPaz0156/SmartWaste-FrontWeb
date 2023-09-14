@@ -16,27 +16,39 @@
     <body>
         <center>
         <!--conteudo da tela-->
-            <img src="img/logo.png"> <!--link para imagem da logo-->
+            <img src="img/logo.png" > <!--link para imagem da logo-->
 
             <form id="login-form">
                 <div>
                     <table>
                         <tr>
+                            <th><label for="nomeCompleto">NOME COMPLETO:</label></th>
+                            <th><input type="text" id="nomeCompleto" name="nomeCompleto" required></th>
+                        </tr>
+                        <tr>
                             <th><label for="username">CPF:</label></th>
                             <th><input type="text" id="username" name="username" required></th>
+                        </tr>
+                        <tr>
+                            <th><label for="email">EMAIL:</label></th>
+                            <th><input type="text" id="email" name="email" required></th>
                         </tr>
                         <tr>
                             <th><label for="password">SENHA:</label></th>
                             <th><input type="password" id="password" name="password" required></th>
                         </tr>
+                        <tr>
+                            <th><label for="confirmPassword"> CONFIRMAR SENHA:</label></th>
+                            <th><input type="password" id="confirmPassword" name="confirmPassword" required></th>
+                        </tr>
                     </table>
-                    <button type="submit">Login</button>
+                    <button type="submit">Cadastrar</button>
 
                     <p id="error"></p>
                 </div>
             </form>
-            <p><a href="/pagina/telaCadastro.html">Ainda não possuo uma conta.</a></p>
-           
+            <p><a href="/pagina/telaLogin.html">Já possuo uma conta.</a></p>
+     
         </center>
     </body>
 </html>
