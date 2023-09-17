@@ -9,6 +9,15 @@ div{
     padding: 10px;
     border-radius: 20px;
 }
+.menu{
+    z-index: 2;
+    background-color: #447C50;
+    
+}
+.menu svg{
+    color: #d9d9d9;
+}
+
 input{
     background-color: #d8d8d8;
     border: 0px;
@@ -83,20 +92,20 @@ button:hover{
 
 body{
     font-family: 'Lato', sans-serif;
-  }
+}
   
-  .wrapper{
+.wrapper{
     position: fixed;
     top: 90%;
     left: 12%;
     transform: translate(-50%, -50%);
-  }
+}
   
-  .link_wrapper{
+.link_wrapper{
     position: relative;
-  }
+}
   
-  a{
+a{
     display: block;
     width: 150px;
     height: 33px;
@@ -110,9 +119,9 @@ body{
     letter-spacing: 1px;
     border: 3px solid #4da660;
     transition: all .35s;
-  }
+}
   
-  .icon{
+.icon{
     width: 50px;
     height: 50px;
     border: 3px solid transparent;
@@ -122,9 +131,9 @@ body{
     top: 0;
     z-index: -1;
     transition: all .35s;
-  }
+}
   
-  .icon svg{
+.icon svg{
     width: 30px;
     position: absolute;
     top: calc(50% - 15px);
@@ -132,16 +141,16 @@ body{
     transform: rotate(-45deg);
     fill: #2ecc71;
     transition: all .35s;
-  }
+}
   
-  a:hover{
+a:hover{
     width: 200px;
     border: 3px solid #2ecc71;
     background: transparent;
     color: #2ecc71;
-  }
+}
   
-  a:hover + .icon{
+a:hover + .icon{
     border: 3px solid #2ecc71;
     right: -25%;
-  }
+}
