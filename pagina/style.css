@@ -42,7 +42,7 @@ button:hover{
     border: 1px;
     background-color: #5db670;
 }
-.erro{
+#erro{
     color:red;
     font-weight: lighter;
 }
