@@ -6,7 +6,7 @@
     #posiciona {
         position: absolute; /* posição absoluta ao elemento pai, neste caso o BODY */
         /* Posiciona no meio, tanto em relação a esquerda como ao topo */
-        left: 50%;
+        left: 10%;
         top: 50%;
         width: 300px; /* Largura da DIV */
         height: 250px; /* Altura da DIV */
@@ -15,13 +15,18 @@
         /* Fazendo isso, centralizará a DIV */
         margin-left: -150px;
         margin-top: -125px;
-        background-color: #FFF;
-        color: #FFF;
-        background-color: #666;
+        background-color: #03862a;
+        color: #FFF; 
         text-align: center; /* Centraliza o texto */
         z-index: 1000; /* Faz com que fique sobre todos os elementos da página */
     }
     #fechar { margin: 5px; font-size: 12px; }
+
+    button{
+        display: block;
+         
+    }
+
   </style>
   <script>
     function fechar() {
@@ -36,10 +41,21 @@
 <!--o elemento BODY por padrão tem posição relativa-->
 <body>
 
- <button onclick=abrir()>A</button>
-    <div id="posiciona" hidden>
-        <div id="fechar" align=right><a href="javascript:fechar();">FECHAR</a></div>
-        Sou flutuante!
+    
+        <button onclick=abrir()><img src="pagina/img/adicionar.png"></button>
+        <button onclick=abrir()><img src="pagina/img/editar.png"></button>
+        <button onclick=abrir()><img src="pagina/img/x circulado.png"></button>
+        <button onclick=abrir()><img src="pagina/img/relatorio.png"></button>
+        <button onclick=abrir()><img src="pagina/img/sair.png"></button>
+    
+
+     <div id="posiciona" hidden>
+         <div id="fechar" align=right><a href="javascript:fechar();"><img src="pagina/img/x.png"></a></div>
+        IIIHHAAAAAAAAAAA
     </div>
+
+
+
+
 </body>
 </html>
