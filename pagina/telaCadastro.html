@@ -8,7 +8,7 @@
         <style>
             /*configuração especifica dessa pagina*/
         </style>
-        <script src="script.js"></script>
+        <script src="cadastro.js" defer></script>
     </head>
     <header>
         <!--barra superiou ou algo desse tipo-->
@@ -18,35 +18,34 @@
         <!--conteudo da tela-->
             <img src="img/logo.png" > <!--link para imagem da logo-->
 
-            <form id="login-form">
-                <div>
-                    <table>
-                        <tr>
-                            <th><label for="nomeCompleto">NOME COMPLETO:</label></th>
-                            <th><input type="text" id="nomeCompleto" name="nomeCompleto" required></th>
-                        </tr>
-                        <tr>
-                            <th><label for="username">CPF:</label></th>
-                            <th><input type="text" id="cpf" name="username" required></th>
-                        </tr>
-                        <tr>
-                            <th><label for="email">EMAIL:</label></th>
-                            <th><input type="text" id="email" name="email" required></th>
-                        </tr>
-                        <tr>
-                            <th><label for="password">SENHA:</label></th>
-                            <th><input type="password" id="password" name="password" required></th>
-                        </tr>
-                        <tr>
-                            <th><label for="confirmPassword"> CONFIRMAR SENHA:</label></th>
-                            <th><input type="password" id="confirmPassword" name="confirmPassword" required></th>
-                        </tr>
-                    </table>
-                    <button type="submit" onclick="cadastrar()"><a href="telaPrincipal.html">Cadastrar</a></button>
+            <div id="login-form">
+                <table>
+                    <tr>
+                        <th><label for="nomeCompleto">NOME COMPLETO:</label></th>
+                        <th><input type="text" id="nome" name="nomeCompleto" required></th>
+                    </tr>
+                    <tr>
+                        <th><label for="username">CPF:</label></th>
+                        <th><input type="text" id="cpf" name="username" required></th>
+                    </tr>
+                    <tr>
+                        <th><label for="email">EMAIL:</label></th>
+                        <th><input type="text" id="email" name="email" required></th>
+                    </tr>
+                    <tr>
+                        <th><label for="password">SENHA:</label></th>
+                        <th><input type="password" id="senha" name="password" required></th>
+                    </tr>
+                    <tr>
+                        <th><label for="confirmPassword"> CONFIRMAR SENHA:</label></th>
+                        <th><input type="password" id="confSenha" name="confirmPassword" required></th>
+                    </tr>
+                </table>
+                <button onclick="cadastrar()">Cadastrar</a></button>
 
-                    <p id="error"></p>
-                </div>
-            </form>
+                <p id="error"></p>
+            </div>
+
             <p><a href="telaLogin.html">Já possuo uma conta.</a></p>
      
         </center>
