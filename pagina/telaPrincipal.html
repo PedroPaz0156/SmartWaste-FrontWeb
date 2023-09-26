@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
-        <title>Mapa</title>
+        <title>SmartWaste</title>
+        
         <script src= "https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="principal.js" defer></script>
     </head>
     <body>
         <n1>
@@ -25,11 +28,11 @@
                 
         </div>
 
-        <div class="menu">
+        <div id="menu">
             <table>
                 <tr>
                     <th>
-                        <button>
+                        <button id="adicionar">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Icone criar">
                                 <path id="Ellipse 13" d="M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24ZM6 24C6 33.9411 14.0589 42 24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24Z" fill="white"/>
@@ -44,7 +47,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <button>
+                        <button id="deletar">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Icone deletar">
                                 <path id="Ellipse 13" d="M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24ZM6 24C6 33.9411 14.0589 42 24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C14.0589 6 6 14.0589 6 24Z" fill="white"/>
@@ -59,7 +62,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <button>
+                        <button id="editar">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Icone editar">
                                 <rect id="Rectangle 40" width="11.503" height="34.45" transform="matrix(0.883323 0.468764 -0.571673 0.820481 26.3833 0)" fill="white"/>
@@ -75,7 +78,7 @@
                 </tr>
                 <tr>
                     <th>
-                        <button>
+                        <button id="relatorio">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Icone relat&#195;&#179;rio">
                                 <path id="Rectangle 41" d="M5.18656 42.7081L2.5 44.0102V10C2.5 5.85786 5.85786 2.5 10 2.5H38C42.1421 2.5 45.5 5.85786 45.5 10V43.9294L43.1306 42.728L42 42.1547L40.8694 42.728L35.9914 45.2013L31.0246 42.7211L29.8903 42.1547L28.7631 42.7351L24.0379 45.1685L19.6652 42.7666L18.5489 42.1534L17.3966 42.6959L12.0679 45.2048L7.45037 42.7503L6.32918 42.1543L5.18656 42.7081Z" stroke="white" stroke-width="5"/>
