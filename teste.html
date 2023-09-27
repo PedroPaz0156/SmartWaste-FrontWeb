@@ -3,24 +3,75 @@
   <title>Div flutuante centro da tela.</title>
   <style type="text/css">
     body {background-color: #CCC; font-family: Tahoma,Arial;}
-    #posiciona {
-        position: absolute; /* posição absoluta ao elemento pai, neste caso o BODY */
-        /* Posiciona no meio, tanto em relação a esquerda como ao topo */
+   
+    #adicionar {
+        position: absolute; 
         left: 15%;
         top: 50%;
-        width: 300px; /* Largura da DIV */
-        height: 250px; /* Altura da DIV */
-        /* A margem a esquerda deve ser menos a metade da largura */
-        /* A margem ao topo deve ser menos a metade da altura */
-        /* Fazendo isso, centralizará a DIV */
+        width: 300px; 
+        height: 250px; 
         margin-left: -150px;
         margin-top: -125px;
         background-color: #03862a;
         color: #FFF; 
-        text-align: center; /* Centraliza o texto */
-        z-index: 1000; /* Faz com que fique sobre todos os elementos da página */
+        text-align: center; 
+        z-index: 1000; 
     }
-    #fechar { margin: 5px; font-size: 12px; }
+    #editar {
+        position: absolute; 
+        left: 15%;
+        top: 50%;
+        width: 300px; 
+        height: 250px; 
+        margin-left: -150px;
+        margin-top: -125px;
+        background-color: #03862a;
+        color: #FFF; 
+        text-align: center; 
+        z-index: 1000; 
+    }
+    #remover {
+        position: absolute; 
+        left: 15%;
+        top: 50%;
+        width: 300px; 
+        height: 250px; 
+        margin-left: -150px;
+        margin-top: -125px;
+        background-color: #03862a;
+        color: #FFF; 
+        text-align: center; 
+        z-index: 1000; 
+    }
+    #relatorio {
+        position: absolute; 
+        left: 15%;
+        top: 50%;
+        width: 300px; 
+        height: 250px; 
+        margin-left: -150px;
+        margin-top: -125px;
+        background-color: #03862a;
+        color: #FFF; 
+        text-align: center; 
+        z-index: 1000; 
+    }
+    #sair {
+        position: absolute; 
+        left: 15%;
+        top: 50%;
+        width: 300px; 
+        height: 250px; 
+        margin-left: -150px;
+        margin-top: -125px;
+        background-color: #03862a;
+        color: #FFF; 
+        text-align: center; 
+        z-index: 1000; 
+    }
+
+    .fechar { margin: 5px; font-size: 12px; }
+
     #botoes{
         position: absolute;   
         left: 0%;
@@ -32,12 +83,47 @@
 
   </style>
   <script>
-    function fechar() {
-        document.getElementById("posiciona").style.display = 'none';
+
+    //Adicionar
+    function fecharAdicionar() {
+        document.getElementById("adicionar").style.display = 'none';
     }
-    function abrir() {
-        document.getElementById("posiciona").style.display = 'block';
+    function abrirAdicionar() {
+        document.getElementById("adicionar").style.display = 'block';
     }
+
+    //Editar
+    function fecharEditar() {
+        document.getElementById("editar").style.display = 'none';
+    }
+    function abrirEditar() {
+        document.getElementById("editar").style.display = 'block';
+    }
+
+    //remover
+    function fecharRemover() {
+        document.getElementById("remover").style.display = 'none';
+    }
+    function abrirRemover() {
+        document.getElementById("remover").style.display = 'block';
+    }
+
+    //Relatorio
+    function fecharRelatorio() {
+        document.getElementById("relatorio").style.display = 'none';
+    }
+    function abrirRelatorio() {
+        document.getElementById("relatorio").style.display = 'block';
+    }
+
+    //Sair
+    function fecharSair() {
+        document.getElementById("sair").style.display = 'none';
+    }
+    function abrirSair() {
+        document.getElementById("sair").style.display = 'block';
+    }
+
  </script>
  </head>
  
@@ -45,20 +131,37 @@
 <body>
 
     <div id="botoes">
-        <button onclick=abrir()><img src="pagina/img/adicionar.png"></button>
-        <button onclick=abrir()><img src="pagina/img/editar.png"></button>
-        <button onclick=abrir()><img src="pagina/img/x circulado.png"></button>
-        <button onclick=abrir()><img src="pagina/img/relatorio.png"></button>
-        <button onclick=abrir()><img src="pagina/img/sair.png"></button>
+        <button onclick=abrirAdicionar()><img src="pagina/img/adicionar.png"></button>
+        <button onclick=abrirEditar()><img src="pagina/img/editar.png"></button>
+        <button onclick=abrirRemover()><img src="pagina/img/x circulado.png"></button>
+        <button onclick=abrirRelatorio()><img src="pagina/img/relatorio.png"></button>
+        <button onclick=abrirSair()><img src="pagina/img/sair.png"></button>
     </div>
 
-     <div id="posiciona" hidden>
-         <div id="fechar" align=right><a href="javascript:fechar();"><img src="pagina/img/x.png"></a></div>
-        IIIHHAAAAAAAAAAA
+<!--tela de adicionar-->
+     <div id="adicionar" hidden>
+         <div class = "fechar" align=right><a href="javascript:fecharAdicionar();"><img src="pagina/img/x.png"></a></div>
+        Adicionar
     </div>
-
-
-
-
+<!--tela de editar-->
+    <div id="editar" hidden>
+         <div class = "fechar" align=right><a href="javascript:fecharEditar();"><img src="pagina/img/x.png"></a></div>
+        Editar
+    </div>
+<!--tela de remover-->
+    <div id="remover" hidden>
+        <div class = "fechar" align=right><a href="javascript:fecharRemover();"><img src="pagina/img/x.png"></a></div>
+        Remover
+    </div>
+<!--tela de Relatorio-->
+    <div id="relatorio" hidden>
+        <div class = "fechar" align=right><a href="javascript:fecharRelatorio();"><img src="pagina/img/x.png"></a></div>
+        Relatorio
+    </div>
+<!--tela de Sair-->
+    <div id="sair" hidden>
+        <div class = "fechar" align=right><a href="javascript:fecharSair();"><img src="pagina/img/x.png"></a></div>
+        Sair
+    </div>
 </body>
 </html>
