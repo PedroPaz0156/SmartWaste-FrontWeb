@@ -110,16 +110,18 @@ a{
     height: 33px;
     line-height: 30px;
     font-weight: bold;
-    text-decoration: none;
+    color: #4da660;
+      /*text-decoration: none;
     background: #4da660;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
+    text-align: center;  */
+    
+   /* text-transform: uppercase;
     letter-spacing: 1px;
     border: 3px solid #4da660;
-    transition: all .35s;
+    transition: all .35s;*/
 }
   
+
 .icon{
     width: 50px;
     height: 50px;
@@ -142,7 +144,7 @@ a{
     transition: all .35s;
 }
   
-a:hover{
+/*a:hover{
     width: 200px;
     border: 3px solid #2ecc71;
     background: transparent;
@@ -152,7 +154,7 @@ a:hover{
 a:hover + .icon{
     border: 3px solid #2ecc71;
     right: -25%;
-}
+}*/
 
 #adicionar {
     position: absolute; 

@@ -56,9 +56,9 @@ function fecharListaPnts(){
 }
 
 function abrirSair(){
-    menu.style.display = "block";
+    sair.style.display = "block";
 }
 
 function fecharSair(){
-    menu.style.display = "none";
+    sair.style.display = "none";
 }
