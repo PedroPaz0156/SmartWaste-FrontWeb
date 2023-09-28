@@ -104,18 +104,18 @@ body{/*a parte de conteudos da pagina*/
     position: relative;
 }
   
-a{
+.animacao{
     display: block;
     width: 150px;
     height: 33px;
     line-height: 30px;
     font-weight: bold;
-    color: #4da660;
-      /*text-decoration: none;
+   color: #4da660; 
+  /* text-decoration: none;
     background: #4da660;
-    text-align: center;  */
+    text-align: center;
     
-   /* text-transform: uppercase;
+    text-transform: uppercase;
     letter-spacing: 1px;
     border: 3px solid #4da660;
     transition: all .35s;*/
@@ -221,3 +221,4 @@ a:hover + .icon{
     text-align: center; 
     z-index: 1000; 
 }
+.fechar { margin: 5px; font-size: 12px; }
