@@ -120,7 +120,9 @@ body{/*a parte de conteudos da pagina*/
     border: 3px solid #4da660;
     transition: all .35s;*/
 }
-  
+ a{ text-decoration: none;
+    color: inherit;
+ } 
 
 .icon{
     width: 50px;
