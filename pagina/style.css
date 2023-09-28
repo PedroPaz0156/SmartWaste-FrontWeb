@@ -1,61 +1,58 @@
-html{
-    font-weight: bolder;
-    background-color: #4da660;
-    font-size: large;
+html{/*muda o arquivo inteiro*/
+    font-weight: bolder; /*negrito*/
+    background-color: #4da660;/*cor de fundo*/
+    font-size: large; /*letras um pouco maiores*/
 }
-div{
-    background-color: #f6f6f6;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 20px;
+div{ /*configuração padrão de blocos sem identificação*/
+    background-color: #f6f6f6;/*fundo branco*/
+    width: fit-content; /*tamanho auto ajustavel a quantidade de itens*/
+    padding: 10px; /*distancia dos itens até a borda*/
+    border-radius: 20px; /*canto arredondado*/
 }
-#menu{
-    z-index: 2;
-    background-color: #447C50;
-}
-
-#menu svg{
-    color: #d9d9d9;
+#menu{ /*configuração do menu */
+    z-index: 2;/*sobrepor a tela*/
+    background-color: #447C50;/*fundo do menu*/
 }
 
-input{
-    background-color: #d8d8d8;
-    border: 0px;
-    border-radius: 5px;
-    padding: 5px;
-    width: fit-content;
-}
-label {font-weight: bold;}
+#menu svg{color: #d9d9d9;/*cor dos icones do menu brancos*/}
 
-button{
-    border: 0px;
-    background-color: #4da660;
-    padding: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 15px;
-    color: #f6f6f6;
-    font-size: larger;
-    font-weight: bolder;
+input{/*configuração dos objetos de digitação*/
+    background-color: #d8d8d8;/*cor*/
+    border: 0px;/*sem borda*/
+    border-radius: 5px;/*canto arredondado*/
+    padding: 5px;/*espaço ao redor do texto*/
+    width: fit-content;/*tamanho auto ajustavel*/
 }
-button:hover{
-    border: 1px;
-    background-color: #5db670;
+label {font-weight: bold;}/*negrito no label de entrada de texto*/
+
+button{/*configuração geral para todos os botões*/
+    border: 0px; /*sem borda*/
+    background-color: #4da660; /*cor do botão*/
+    padding: 2px; /*espaço entre o texto e o limite do botão*/
+    padding-left: 5px;/*mesmo espaço do q a esquerda*/
+    padding-right: 5px;/*mesmo espaço so que a direita*/
+    border-radius: 15px;/*canto arredondado*/
+    color: #f6f6f6;/*texto branco*/
+    font-size: larger;/*letras maiores*/
+    font-weight: bolder;/*negrito mais negrito*/
 }
-#erro{
-    color:red;
-    font-weight: lighter;
+button:hover{/*quando o mouse passa pelo botão*/
+    border: 1px;/*faz uma bordinha fina*/
+    background-color: #5db670;/*muda um pouco a cor*/
 }
 
+#erro{/*configuração da mensagem de erro ao realizar login ou cadastro*/
+    color:red;/*letra vermelha*/
+    font-weight: lighter;/*letra fina*/
+}
 
-*{
+*{/*por favor alguem explica isso*/
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-
-.n1{
+.n1{ /*esse é o objeto que está o mapa mas eu n sei o q ele faz*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,21 +60,19 @@ button:hover{
     background: #4da660;
 }
 
-.mapBox{
-    z-index: -1;
-    position: center;
-    width: 100px;
+.mapBox{/*configurações do div que contem o mapa*/
+    position: center;/*centraliza dentro do N1*/
+    width: 100px;/*tamanho*/
     height: 100px;
-    background-color: #4da660;
+    background-color: #4da660;/*cor de fundo, so aparece enquanto o mapa está carregando*/
 }
 
-.mapBox iframe{
-    z-index: -1;
-    width: 1339px;
-    height: 630px;
+.mapBox iframe{/*iframe dentro do mapBox, a tela que tem o mapa*/
+    width: 1339px;/*largura*/
+    height: 630px;/*altura*/
 }
 
-.custom-map-control-button{
+.custom-map-control-button { /*não sei alguem explica esse tbm*/
     background-color: #fff;
     border: 0;
     border-radius: 2px;
@@ -94,18 +89,18 @@ button:hover{
     background: rgb(235,235,235);
 }
 
-body{
-    font-family: 'Lato', sans-serif;
+body{/*a parte de conteudos da pagina*/
+    font-family: 'Lato', sans-serif; /*fonte*/
 }
   
-.wrapper{
+.wrapper{ /*tem que explicar isso tbm*/
     position: fixed;
     top: 90%;
     left: 12%;
     transform: translate(-50%, -50%);
 }
   
-.link_wrapper{
+.link_wrapper{ /*e esse*/
     position: relative;
 }
   
