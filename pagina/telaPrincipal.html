@@ -127,19 +127,53 @@
         <!--tela de adicionar-->
         <div id="adicionar" hidden>
             <div class = "fechar" align=right><a href="javascript:fecharAddPnt();"><img src="img/x.png"></a></div>
-           Adicionar
+            <form action="processar_formulario.php" method="post">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required><br><br>
+        
+                <label for="id_sensor">ID do Sensor:</label>
+                <input type="text" id="id_sensor" name="id_sensor" required><br><br>
+        
+                <label for="nome">Nome na Database:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+        
+                <input type="submit" value="Criar">
+            </form>
+        </body>
        </div>
        
        <!--tela de editar-->
         <div id="editar" hidden>
             <div class = "fechar" align=right><a href="javascript:fecharEditPnt();"><img src="img/x.png"></a></div>
-        Editar
+            <form action="processar_formulario.php" method="post">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required><br><br>
+        
+                <label for="id_sensor">ID do Sensor:</label>
+                <input type="text" id="id_sensor" name="id_sensor" required><br><br>
+        
+                <label for="nome">Nome na Database:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+        
+                <input type="submit" value="Salvar">
+            </form>
         </div>
 
         <!--tela de remover-->
         <div id="remover" hidden>
             <div class = "fechar" align=right><a href="javascript:fecharDelPnt();"><img src="img/x.png"></a></div>
-            Remover
+            <form action="processar_formulario.php" method="post">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required><br><br>
+        
+                <label for="id_sensor">ID do Sensor:</label>
+                <input type="text" id="id_sensor" name="id_sensor" required><br><br>
+        
+                <label for="nome">Nome na Database:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+        
+                <input type="submit" value="Excluir">
+            </form>
         </div>
         
         <!--tela de Relatorio-->
